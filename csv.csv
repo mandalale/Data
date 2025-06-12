@@ -1,0 +1,40 @@
+Tanggal,Hari ,Minggu ke-,Bulan,Total Pengeluaran Harian ,Nominal Pemasukan,status hari,Lokasi,Event 
+28-Apr-25,Monday,18,4,58000,37000,Normal,Semarang,Tidak Ada
+29-Apr-25,Tuesday,18,4,36000,200000,Normal,Semarang,Tidak Ada
+30-Apr-25,Wednesday,18,4,26500,0,Normal,Semarang,Tidak Ada
+1-May-25,Thursday,18,5,140000,0,Boros,Pemalang,Ada
+2-May-25,Friday,18,5,0,0,Normal,Pemalang,Tidak Ada
+3-May-25,Saturday,18,5,61500,0,Boros,Pemalang,Tidak Ada
+4-May-25,Sunday,19,5,61000,0,Boros,Semarang,Ada
+5-May-25,Monday,19,5,51000,200000,Normal,Semarang,Tidak Ada
+6-May-25,Tuesday,19,5,46000,0,Normal,Semarang,Tidak Ada
+7-May-25,Wednesday,19,5,24000,0,Normal,Semarang,Tidak Ada
+8-May-25,Thursday,19,5,23000,0,Normal,Semarang,Tidak Ada
+9-May-25,Friday,19,5,31500,200000,Normal,Semarang,Tidak Ada
+10-May-25,Saturday,19,5,19000,0,Normal,Semarang,Ada
+11-May-25,Sunday,20,5,13000,0,Normal,Semarang,Ada
+12-May-25,Monday,20,5,160000,0,Boros,Yogyakarta,Ada
+13-May-25,Tuesday,20,5,84000,200000,Boros,Yogyakarta,Ada
+14-May-25,Wednesday,20,5,69000,0,Boros,Semarang,Tidak Ada
+15-May-25,Thursday,20,5,22000,0,Normal,Semarang,Tidak Ada
+16-May-25,Friday,20,5,35500,0,Normal,Semarang,Tidak Ada
+17-May-25,Saturday,20,5,25000,200000,Normal,Semarang,Tidak Ada
+18-May-25,Sunday,21,5,36500,0,Normal,Semarang,Tidak Ada
+19-May-25,Monday,21,5,36000,0,Normal,Semarang,Tidak Ada
+20-May-25,Tuesday,21,5,101000,0,Boros,Semarang,Tidak Ada
+21-May-25,Wednesday,21,5,24000,0,Normal,Semarang,Tidak Ada
+22-May-25,Thursday,21,5,76000,0,Boros,Semarang,ada
+23-May-25,Friday,21,5,32000,100000,Normal,Semarang,Tidak Ada
+24-May-25,Saturday,21,5,28000,0,Normal,Semarang,Tidak Ada
+25-May-25,Sunday,22,5,44000,0,Normal,Semarang,Tidak Ada
+26-May-25,Monday,22,5,31000,100000,Normal,Semarang,Tidak Ada
+27-May-25,Tuesday,22,5,42500,0,Normal,Semarang,Tidak Ada
+28-May-25,Wednesday,22,5,17500,0,Normal,Semarang,Tidak Ada
+29-May-25,Thursday,22,5,167000,250000,Boros,Semarang,ada
+30-May-25,Friday,22,5,62000,0,Boros,Semarang,Tidak Ada
+31-May-25,Saturday,22,5,10000,0,Normal,Semarang,Tidak Ada
+1-Jun-25,Sunday,23,6,48000,0,Normal,Semarang,Tidak Ada
+2-Jun-25,Monday,23,6,28000,0,Normal,Semarang,Tidak Ada
+3-Jun-25,Tuesday,23,6,21000,0,Normal,Semarang,Tidak Ada
+4-Jun-25,Wednesday,23,6,383000,200000,Boros,Semarang,Tidak Ada
+5-Jun-25,Thursday,23,6,0,0,Normal,Semarang,Tidak Ada
