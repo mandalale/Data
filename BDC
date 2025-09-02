@@ -1,0 +1,63 @@
+import os
+import pandas as pd
+import subprocess
+import requests
+from urllib.parse import urlparse
+
+df = pd.read_csv('https://raw.githubusercontent.com/mandalale/Data/refs/heads/SATRIA-DATA-2025/datatrain.csv')
+
+# direktori untuk menyimpan hasil unduhan
+os.makedirs("train_videos", exist_ok=True)
+
+# hapus baris yang mengandung format URL yang bermasalah
+exclude_patterns = [
+    "fbcdn.net",
+    "scontent"
+]
+
+# filter dataframe
+for pattern in exclude_patterns:
+    df = df[~df['video'].str.contains(pattern, na=False)]
+
+print(f"[INFO] Dataset setelah filter: {len(df)} baris tersisa")
+
+# function untuk cleanling url instagram
+def cleaning_instagram_url (url):
+  if "instagram.com" in url:
+        parsed = urlparse(url)
+        return f"{parsed.scheme}://{parsed.netloc}{parsed.path}"
+  return url
+
+# looping download
+for i, row in df.iterrows():
+    video_id = row['id']
+    url = cleaning_instagram_url(row['video'])
+    output_path = f"train_videos/{video_id}.mp4"
+
+    try:
+        print(f"[INFO] Sedang download video {video_id} dari {url} ...")
+        if 'instagram.com' in url:
+
+            cmd = [
+                    "yt-dlp",
+                     "--cookies", "cookies.txt",
+                     "-o", output_path,
+                     url
+                    ]
+        elif 'drive.google.com' in url:  # khusus Google Drive
+            import gdown
+            gdown.download(url, output_path, quiet=False)
+
+        else:
+            cmd = [
+                "yt-dlp",
+                "-o", output_path,
+                url
+            ]
+
+            subprocess.run(cmd, check=True)
+
+        print(f"[SUCCESS] Video {video_id} berhasil didownload!\n")
+
+    except Exception as e:
+        print(f"[FAILED] Video {video_id} gagal didownload: {e}\n")
